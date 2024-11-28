@@ -152,9 +152,7 @@ div[class*=box] {
     font-size: 14px;
     color: #0f1a52;
   }
-  :root {
-    width: 460px;
-  }
+
 }
 body.dark-mode .btn{
   color: white;
