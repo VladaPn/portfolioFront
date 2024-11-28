@@ -1,0 +1,138 @@
+.hashtag{
+    color:rgb(217, 0, 246);
+}
+.navbar {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    z-index: 100;
+    padding: 10px 0;
+    padding-block: 12px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none !important;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--main-text-color);
+    transition: 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--secondary-link-color);
+    color: #fff;
+  }
+  
+  .main-menu {
+    display: flex;
+  }
+  
+  .main-menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--main-text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .main-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .main-menu.open {
+      display: flex;
+    }
+  
+    .main-menu-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  @media (max-width: 500px){
+    .navbar{
+      min-width: 400px;
+    }
+    .logo-a{
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: 500px) {
+    .hamburger {
+        padding: 10px;
+        font-size: 2rem;
+    }
+    .main-menu {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+  @media(max-width:400px){
+    .navbar{
+        width: 100% !important;
+        padding-inline: 5%;
+        margin: 0 auto;
+        
+    }
+}
+  body.dark-mode{
+    --secondary-text-color: #be083f;
+    --secondary-link-color: rgb(217, 0, 246);
+    background-color: #282c33;
+  }
+  body.dark-mode .navbar{
+    background-color: #282c33;
+    box-shadow: rgba(38, 38, 62, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+  }
+  body.dark-mode .theme-toggle:hover {
+    background-color: white;
+  }
+  
+  body.dark-mode a {
+    color: white ;
+  }
+  body.dark-mode .hamburger {
+    color: white;
+  }
+  
+  body.dark-mode a:hover {
+    color: yellow;
+  }
+  
