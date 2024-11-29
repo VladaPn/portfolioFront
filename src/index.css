@@ -181,6 +181,13 @@ body.dark-mode .btn{
 }
 @media(max-width:400px){
   body {
-    min-width: 101vh;
+    min-width: 102vw;
   }
+}
+@media(max-width:400px){
+  body {
+    width: 111vw;
+    min-width: 380px;
+  }
+
 }
