@@ -22,6 +22,13 @@
   width: 90%;
   margin: 0 auto;
 }
+ul{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100%;
+}
 a {
   color: var(--main-text-color);
   text-decoration: none;
@@ -74,6 +81,7 @@ body.dark-mode{
 body.dark-mode .hashtag{
   color: yellow;
 }
+
 .enh{
   color: var(--secondary-text-color);
 }
@@ -152,6 +160,7 @@ div[class*=box] {
     font-size: 14px;
     color: #0f1a52;
   }
+  
 
 }
 body.dark-mode .btn{
@@ -169,4 +178,9 @@ body.dark-mode .btn{
     background-color: #f9f9f9;
   }
   
+}
+@media(max-width:400px){
+  body {
+    min-width: 101vh;
+  }
 }
